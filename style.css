@@ -33,17 +33,6 @@ footer {
   text-align: center;
 }
 
-.class {
-  /* this is a class - meant to be used many times*/
-  color: teal;
-  text-transform: uppercase;
-}
-
-#id {
-  /* this is an id - meant to style only 1 element, overrides tags/classes*/
-  color: magenta;
-}
-
 h1 {
   color: #303030;
   font-size: 3em;
