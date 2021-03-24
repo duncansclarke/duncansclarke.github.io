@@ -1,23 +1,10 @@
-@media (min-width: 481px) {
-  #icon {
-    border-radius: 50%;
-    /* width: 9%; */
-    display: inline-block;
-    box-shadow: 5px 10px 8px #888888;
-    vertical-align: middle;
-    margin-bottom: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  #icon {
-    /* border-radius: 50%; */
-    /* width: 9%; */
-    display: inline-block;
-    box-shadow: 5px 10px 8px green;
-    vertical-align: middle;
-    margin-bottom: 25px;
-  }
+.icon {
+  border-radius: 50%;
+  /* width: 9%; */
+  display: inline-block;
+  box-shadow: 5px 10px 8px #888888;
+  vertical-align: middle;
+  margin-bottom: 25px;
 }
 
 html,
