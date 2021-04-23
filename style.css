@@ -1,3 +1,55 @@
+/* MOBILE */
+@media (max-width: 1000px) {
+  .paragraph {
+    width: 580px;
+    height: 410px;
+    font-size: 30px;
+    text-align: left;
+  }
+  .icon {
+    margin-top: 125px;
+    border-radius: 50%;
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 25px;
+    height: 50%;
+  }
+  figcaption {
+    font-size: 26px;
+    text-align: center;
+  }
+  a.button1 {
+    font-size: 30px;
+  }
+  body {
+    font-size: 25px;
+  }
+  h1 {
+    color: #303030;
+  }
+
+  h2 {
+    font-size: 300px;
+  }
+  h3 {
+    color: #303030;
+    /* font-size: 2em; */
+    width: 100%;
+    font-family: "Trebuchet MS";
+    text-align: center;
+  }
+  ul {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+
+  li {
+    /* font-family: "Trebuchet MS"; */
+    font-size: 18px;
+    padding: 5px;
+  }
+}
+/* DESKTOP */
+
 .icon {
   border-radius: 50%;
   /* width: 9%; */
@@ -5,6 +57,13 @@
   box-shadow: 5px 10px 8px #888888;
   vertical-align: middle;
   margin-bottom: 25px;
+}
+.paragraph {
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: 50px;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 html,
@@ -164,14 +223,6 @@ a.button1:hover {
   border-radius: 25px;
   width: 50%;
   background-color: #ee4c2c;
-}
-
-.paragraph {
-  margin-top: 50px;
-  background-color: white;
-  border-radius: 25px;
-  margin-left: 50px;
-  box-shadow: 5px 10px 8px #888888;
 }
 
 .tools {
