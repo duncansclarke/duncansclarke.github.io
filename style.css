@@ -1,9 +1,21 @@
 /* DESKTOP */
 
+/* grid for tools and languages */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 5px;
+  justify-content: space-around;
+}
+#grid > div {
+  padding: 0.5em;
+  text-align: center;
+}
+
 /* SPEECH BUBBLE */
 .speech {
   /* (A1) FONT */
-  font-family: arial, sans-serif;
+  font-family: Arial;
   font-size: 1.1em;
   color: #303030;
   /* (A2) DIMENSIONS + BACKGROUND */
@@ -36,6 +48,7 @@
   box-shadow: 5px 10px 8px #888888;
   vertical-align: middle;
   margin-bottom: 25px;
+  width: 7%;
 }
 .paragraph {
   margin-top: 50px;
@@ -59,10 +72,6 @@ figcaption {
 }
 
 p {
-  width: 958px;
-  margin: 10px;
-  padding: 20px;
-  /* font-family: "Candara"; */
   font-size: 1.1em;
   display: inline-block;
 }
@@ -84,7 +93,7 @@ h2 {
   font-size: 2em;
   width: 100%;
   font-family: "Trebuchet MS";
-  text-align: left;
+  text-align: center;
 }
 h3 {
   color: #303030;
@@ -253,5 +262,13 @@ a.button1:hover {
   }
   .langIcon {
     width: 70px;
+  }
+  /* SPEECH BUBBLE */
+  .speech {
+    max-width: 320px;
+  }
+  p {
+    font-size: 1em;
+    display: inline-block;
   }
 }
