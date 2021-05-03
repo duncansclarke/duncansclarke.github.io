@@ -1,58 +1,37 @@
-/* MOBILE */
-@media (max-width: 1000px) {
-  .paragraph {
-    width: 580px;
-    height: 410px;
-    font-size: 30px;
-    text-align: left;
-  }
-  .icon {
-    margin-top: 125px;
-    border-radius: 50%;
-    box-shadow: 5px 10px 8px #888888;
-    margin-bottom: 25px;
-    height: 50%;
-  }
-  figcaption {
-    font-size: 26px;
-    text-align: center;
-  }
-  a.button1 {
-    font-size: 30px;
-  }
-  body {
-    font-size: 25px;
-  }
-  h1 {
-    color: #303030;
-  }
-
-  h2 {
-    font-size: 300px;
-  }
-  h3 {
-    color: #303030;
-    /* font-size: 2em; */
-    width: 100%;
-    font-family: "Trebuchet MS";
-    text-align: center;
-  }
-  ul {
-    margin-top: 60px;
-    margin-left: 20px;
-  }
-
-  li {
-    /* font-family: "Trebuchet MS"; */
-    font-size: 18px;
-    padding: 5px;
-  }
-}
 /* DESKTOP */
+
+/* SPEECH BUBBLE */
+.speech {
+  /* (A1) FONT */
+  font-family: arial, sans-serif;
+  font-size: 1.1em;
+  color: #303030;
+  /* (A2) DIMENSIONS + BACKGROUND */
+  position: relative;
+  background: white;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 420px;
+  text-align: justify;
+}
+.speech::after {
+  position: absolute;
+  content: "";
+  border: 20px solid transparent;
+}
+.top.speech::after {
+  /* UP TRIANGLE */
+  border-bottom-color: white;
+  border-top: 0;
+  /* POSITION TAIL AT BOTTOM OF BOX */
+  top: -20px;
+  left: 50%;
+  margin-left: -20px;
+}
 
 .icon {
   border-radius: 50%;
-  /* width: 9%; */
   display: inline-block;
   box-shadow: 5px 10px 8px #888888;
   vertical-align: middle;
@@ -95,7 +74,6 @@ footer {
 h1 {
   color: #303030;
   font-size: 3em;
-  padding-top: 50px;
   width: 100%;
   font-family: "Trebuchet MS";
   text-align: center;
@@ -142,6 +120,10 @@ a.button1:hover {
     display: block;
     margin: 0.4em auto;
   }
+}
+
+.langIcon {
+  width: 70px;
 }
 
 /* #container {
@@ -239,13 +221,40 @@ a.button1:hover {
   box-shadow: 5px 10px 8px #888888;
   border: 1px solid black;
 }
-ul {
-  margin-top: 60px;
-  margin-left: 20px;
-}
+/* MOBILE */
+@media screen and (max-width: 420px) {
+  .paragraph {
+    width: 580px;
+    height: 410px;
+    font-size: 30px;
+    text-align: left;
+  }
+  .icon {
+    width: 100px;
+  }
+  figcaption {
+    font-size: 20px;
+    text-align: center;
+  }
+  a.button1 {
+    font-size: 15px;
+  }
+  body {
+    font-size: 15px;
+  }
+  hr {
+    width: 300px;
+  }
 
-li {
-  /* font-family: "Trebuchet MS"; */
-  font-size: 18px;
-  padding: 5px;
+  h2 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 18px;
+    /* padding: 5px; */
+  }
+  .langIcon {
+    width: 70px;
+  }
 }
