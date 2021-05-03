@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
   move("js", 65);
   move("react", 25);
   move("sql", 65);
-  move("git", 65);
+  move("git", 25);
   move("php", 25);
-  move("tensorflow", 40);  
-  move("pytorch", 50);
+  move("tensorflow", 30);  
+  move("pytorch", 40);
 }, false);
 
 function copyToClipboard(str) {
