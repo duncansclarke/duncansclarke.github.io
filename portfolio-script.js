@@ -12,7 +12,58 @@ document.addEventListener('DOMContentLoaded', function() {
   move("php", 25);
   move("tensorflow", 30);  
   move("pytorch", 40);
+  consoleText(['Hi', 'I\'m Duncan'],'text');
 }, false);
+
+// terminal text effect
+consoleText(["Duncan Clarke"]); // add more messages later maybe
+
+function consoleText(words, id) {
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false  && target != null) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true && con != null) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else if (con != null) {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+
+
+// end terminal text effect
 
 function copyToClipboard(str) {
   // create element
@@ -33,7 +84,6 @@ function copyToClipboard(str) {
 
 function move(meme, widthCap) {
   var i = 0;
-  console.log("meme")
   if (i == 0) {
     i = 1;
     var elem = document.getElementById(meme);
