@@ -1,5 +1,6 @@
 /* DESKTOP */
 
+/* Profile card */
 /* Project cards */
 
 section {
@@ -104,8 +105,7 @@ a {
   transform: translateY(-60px);
 }
 .project .wrapper {
-  background: url(file:///C:/Users/Duncan/Desktop/Portfolio/images/new-tab-page-screenshot.gif)
-    50% 1% / cover no-repeat;
+  background: url(images/new-tab-page-screenshot.gif) 50% 1% / cover no-repeat;
   background-size: 200%;
 }
 
