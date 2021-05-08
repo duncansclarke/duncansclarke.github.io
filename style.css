@@ -1,12 +1,225 @@
 /* DESKTOP */
 
+/* Project cards */
+
+section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  gap: 4px;
+  grid-auto-flow: column;
+  margin-bottom: 50px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.row {
+  margin: auto 0;
+}
+.card {
+  float: left;
+  padding: 1rem;
+  min-width: 500px;
+}
+
+@media screen and (max-width: 680px) {
+  section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    gap: 4px;
+    grid-auto-flow: row;
+  }
+  .card {
+    min-width: 100vw;
+  }
+}
+
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.card .menu-content::before,
+.card .menu-content::after {
+  content: "";
+  display: table;
+}
+.card .menu-content::after {
+  clear: both;
+}
+.card .menu-content li {
+  display: inline-block;
+}
+.card .menu-content a {
+  color: #fff;
+}
+.card .wrapper {
+  background-color: #fff;
+  min-height: 450px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(80px + 1em));
+  transition: transform 0.3s;
+}
+.card .data .content {
+  padding: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+.card .type {
+  font-size: 15px;
+}
+.card .title {
+  font-size: 25px;
+  font-family: "Open Sans";
+  margin-top: 10px;
+}
+.card .text {
+  height: 70px;
+  margin: 0;
+  font-size: 14px;
+}
+.card input[type="checkbox"] {
+  display: none;
+}
+.card input[type="checkbox"]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+.project .wrapper {
+  background: url(file:///C:/Users/Duncan/Desktop/Portfolio/images/new-tab-page-screenshot.gif)
+    50% 1% / cover no-repeat;
+  background-size: 200%;
+}
+
+.project .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem;
+}
+.project .date span {
+  display: block;
+  text-align: center;
+}
+.project .date .month,
+.project .date .year {
+  /* text-transform: uppercase; */
+  font-size: 15px;
+}
+.project .content {
+  /* background-color: #333; */
+  background-color: #333;
+  color: white;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+.project .title a {
+  color: white;
+}
+.project .menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+}
+.project .menu-content li {
+  text-align: center;
+  width: 3rem;
+  background-color: #333;
+  height: 3rem;
+  position: relative;
+}
+.project .menu-content a {
+  font-size: 24px;
+}
+.alternate-card {
+  float: left;
+  padding: 1rem;
+  min-width: 500px;
+}
+.alternate-card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.alternate-card .menu-content::before,
+.alternate-card .menu-content::after {
+  content: "";
+  display: table;
+}
+.alternate-card .menu-content::after {
+  clear: both;
+}
+.alternate-card .menu-content li {
+  display: inline-block;
+}
+.alternate-card .menu-content a {
+  color: #fff;
+}
+.alternate-card .wrapper {
+  background-color: #fff;
+  min-height: 540px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.alternate-card .wrapper:hover .data {
+  transform: translateY(0);
+}
+.alternate-card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(100% + 1em));
+  transition: transform 0.3s;
+}
+.alternate-card .data .content {
+  padding: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+.alternate-card .type {
+  font-size: 12px;
+}
+.alternate-card .title {
+  margin-top: 10px;
+}
+.alternate-card .text {
+  height: 325px;
+  margin: 0;
+}
+.alternate-card input[type="checkbox"] {
+  display: none;
+}
+.alternate-card input[type="checkbox"]:checked + .menu-content {
+  transform: translateY(-60px);
+}
 /* terminal text effect for header  */
 
 .hidden {
   opacity: 0;
 }
 .console-container {
-  font-family: "Trebuchet MS";
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 3em;
   text-align: center;
@@ -35,20 +248,24 @@
   padding: 0.5em;
   text-align: center;
 }
+body {
+  font-family: "Open Sans";
+}
 
 /* SPEECH BUBBLE */
 .speech {
   /* (A1) FONT */
-  font-family: Arial;
   font-size: 1.1em;
   color: #303030;
+  /* color: #fff; */
   /* (A2) DIMENSIONS + BACKGROUND */
   position: relative;
   background: white;
+  /* background: #303030; */
   box-shadow: 5px 10px 8px #888888;
   padding: 20px;
   border-radius: 10px;
-  max-width: 420px;
+  max-width: 430px;
   text-align: justify;
 }
 .speech::after {
@@ -108,7 +325,7 @@ h1 {
   color: #303030;
   font-size: 3em;
   width: 100%;
-  font-family: "Trebuchet MS";
+  font-family: "Open Sans";
   text-align: center;
 }
 
@@ -116,14 +333,12 @@ h2 {
   color: #303030;
   font-size: 2em;
   width: 100%;
-  font-family: "Trebuchet MS";
   text-align: center;
 }
 h3 {
   color: #303030;
   font-size: 2em;
   width: 100%;
-  font-family: "Trebuchet MS";
   text-align: center;
 }
 
@@ -289,10 +504,12 @@ a.button1:hover {
   }
   /* SPEECH BUBBLE */
   .speech {
+    /* font-family: "Consolas"; */
     max-width: 320px;
   }
   p {
     font-size: 1em;
     display: inline-block;
+    /* font-family: "Trebuchet MS"; */
   }
 }
