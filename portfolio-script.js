@@ -12,11 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
   move("php", 25);
   move("tensorflow", 30);  
   move("pytorch", 40);
-  consoleText(['Hi', 'I\'m Duncan'],'text');
+  consoleText(['Hi', 'I\'m Duncan', 'Welcome to my portfolio website.'],'text');
 }, false);
 
 // terminal text effect
-consoleText(["Duncan Clarke"]); // add more messages later maybe
 
 function consoleText(words, id) {
   var visible = true;
