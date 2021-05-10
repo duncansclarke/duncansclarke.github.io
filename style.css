@@ -10,7 +10,8 @@
 }
 
 .profile-card {
-  background-color: #fff;
+  color: #333;
+  background-color: white;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -27,7 +28,6 @@
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .profile-card header {
   background: #333;
   padding: 1px;
@@ -50,6 +50,7 @@
 
 .profile-card header h1 {
   color: #333;
+  /* color: white; */
   font-family: "Quicksand";
   font-size: 25px;
   font-weight: 500;
@@ -91,6 +92,7 @@
   font-size: 15px;
   text-align: center;
   font-family: "Quicksand";
+  color: #333;
 }
 
 .profile-card .profile-social-links {
@@ -170,10 +172,6 @@
   color: #fff;
 }
 
-.profile-card:hover header img {
-  border-radius: 50%;
-}
-
 .profile-card:hover .profile-bio {
   opacity: 1;
 }
@@ -198,7 +196,6 @@ section {
   margin-bottom: 50px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 * {
   box-sizing: border-box;
 }
@@ -253,7 +250,7 @@ a {
   min-height: 450px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .card .wrapper:hover .data {
   transform: translateY(0);
@@ -281,7 +278,7 @@ a {
 .card .text {
   height: 70px;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
 }
 .card input[type="checkbox"] {
   display: none;
@@ -312,13 +309,14 @@ a {
   font-size: 15px;
 }
 .project .content {
-  /* background-color: #333; */
   background-color: #333;
+  /* background-color: white; */
   color: white;
-  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+  /* color: #333; */
 }
 .project .title a {
   color: white;
+  /* color: #333; */
 }
 .project .menu-content {
   position: absolute;
@@ -410,6 +408,7 @@ a {
   text-align: center;
   display: block;
   color: #303030;
+  /* color: #fff; */
   top: 0;
   bottom: 0;
   left: 0;
@@ -432,40 +431,17 @@ a {
 #grid > div {
   padding: 0.5em;
   text-align: center;
+  position: relative;
+  left: 50%;
 }
-body {
-  font-family: "Quicksand";
+@media screen and (max-width: 1800px) {
+  #grid > div {
+    left: 0;
+  }
 }
 
-/* SPEECH BUBBLE */
-.speech {
-  /* (A1) FONT */
-  font-size: 1.1em;
-  color: #303030;
-  /* color: #fff; */
-  /* (A2) DIMENSIONS + BACKGROUND */
-  position: relative;
-  background: white;
-  /* background: #303030; */
-  box-shadow: 5px 10px 8px #888888;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 430px;
-  text-align: justify;
-}
-.speech::after {
-  position: absolute;
-  content: "";
-  border: 20px solid transparent;
-}
-.top.speech::after {
-  /* UP TRIANGLE */
-  border-bottom-color: white;
-  border-top: 0;
-  /* POSITION TAIL AT BOTTOM OF BOX */
-  top: -20px;
-  left: 50%;
-  margin-left: -20px;
+body {
+  font-family: "Quicksand";
 }
 
 .icon {
@@ -495,6 +471,7 @@ body {
 figcaption {
   text-align: center;
   padding-top: 5px;
+  /* color: white; */
 }
 
 p {
@@ -508,6 +485,7 @@ footer {
 
 h1 {
   color: #303030;
+  /* color: white; */
   font-size: 3em;
   width: 100%;
   font-family: "Quicksand";
@@ -516,12 +494,14 @@ h1 {
 
 h2 {
   color: #303030;
+  /* color: white; */
   font-size: 2em;
   width: 100%;
   text-align: center;
 }
 h3 {
   color: #303030;
+  /* color: white; */
   font-size: 2em;
   width: 100%;
   text-align: center;
