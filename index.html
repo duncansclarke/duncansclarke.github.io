@@ -1,282 +1,120 @@
 <!DOCTYPE html>
-<html style="background-color:#efefef">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duncan Clarke</title>
-    <script src="portfolio-script.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="./style.css" type="text/css" rel="stylesheet" />
-    <!-- <h1>Duncan Clarke</h1> -->
-    <div class='console-container'>
-      <span id="text"></span>
-      <div class='console-underscore' id='console'>&#95;</div>
-    </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Duncan Clarke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="icon" href="images/icons/tab.svg">
+  <noscript>
+  </noscript>
 
-    <nav style="text-align: center;">
-      <!-- <a href="index.html" class="button1">HOME</a> -->
-      <a href="cv.html" class="button1">My CV</a>
-      <!-- <a href="projects.html" class="button1">PROJECTS</a> -->
-    </nav>
-    <br>
-    <hr width="750px">
-  </head>
- 
-  <br>
-  <br>
-  
-  <aside class="profile-card">
-  
-    <header>
-      <img src="images/icon.png">
-  
-      <h1>Duncan Clarke</h1>
-      
-      <h2>Whitby, Ontario</h2>
-      
-  
-    </header>
-  
-    <div class="profile-bio">
-  
-      <p>Hello, I'm a programmer from Ontario, Canada. I have an undergraduate education in computing
-      and cognitive science from Queen's University. This is my personal website where you can view
-      my projects and skills.</p>
-  
-    </div>
-  
-    <ul class="profile-social-links">
-  
-      <!-- github -->
-      <li>
-        <a href="https://github.com/duncansclarke">
-          <img src="images/github.png">
-        </a>
-      </li>
-  
-      <!-- linkedin -->
-      <li>
-        <a href="https://www.linkedin.com/in/duncan-clarke-a2b18b156/">
-          <img src="https://image.flaticon.com/icons/svg/174/174857.svg">
-        </a>
-  
-      <!-- twitter -->
-      <li>
-        <a href="https://twitter.com/duncanc_">
-          <img style="margin-top: 4px;" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"
-          ">
-        </a>
-      </li>
-    </ul>
-  
-  </aside>
-  
-  <br />
-  <br>
-  
-    <div>
-      <h2>Languages and Tools</h2>
-    </div>
+</head>
 
-  <div id="grid">
-    <div>
-      <figure style='float:left;'>
-        <img src="images/python.png" class="langIcon" />
-        <figcaption> Python </figcaption>
-        <div class="container">
-          <div class="skills python" id="python"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/java.png" class="langIcon" />
-        <figcaption> Java </figcaption>
-        <div class="container">
-          <div class="skills java" id="java"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src=" images/git.png" class="langIcon" />
-        <figcaption> Git </figcaption>
-        <div class="container">
-          <div class="skills git" id="git"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/html.png" class="langIcon" />
-        <figcaption> HTML </figcaption>
-        <div class="container">
-          <div class="skills html" id="html"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/css.png" class="langIcon" />
-        <figcaption> CSS </figcaption>
-        <div class="container">
-          <div class="skills css" id="css"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/javascript.png" class="langIcon" />
-        <figcaption> JavaScript </figcaption>
-        <div class="container">
-          <div class="skills js" id="js"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src=" images/sql.png" class="langIcon" />
-        <figcaption> SQL </figcaption>
-        <div class="container">
-          <div class="skills sql" id="sql"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/react.png" class="langIcon" />
-        <figcaption> ReactJS </figcaption>
-        <div class="container">
-          <div class="skills react" id="react""></div>
-            </div>
-          </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/pytorch.png" class="langIcon" />
-        <figcaption> PyTorch </figcaption>
-        <div class="container">
-          <div class="skills pytorch" id="pytorch"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/tensorflow.png" class="langIcon" />
-        <figcaption> TensorFlow </figcaption>
-        <div class="container">
-          <div class="skills tensorflow" id="tensorflow"></div>
-        </div>
-      </figure>
-    </div>
-    <div>
-      <figure style='float:left;'>
-        <img src="images/php.png" class="langIcon" style="padding-bottom: 17px;padding-top: 17px;" />
-        <figcaption> PHP </figcaption>
-        <div class="container">
-          <div class="skills php" id="php"></div>
-        </div>
-      </figure>
-    </div>
-    
-  </div>
-
-
-  <br>
-  <br>
-  <div>
-    <h2>Projects</h2>
-  </div>
-  <section>
-    <div class="project card">
-      <div class="wrapper" style="background: url(images/sudoku.png)
-        30% 1% / cover no-repeat;">
-        <div class="date">
-          <span class="month">August</span>
-          <span class="year">2020</span>
-        </div>
-        <ul class="menu-content">
-          <li><a href="https://github.com/duncansclarke/ML_Sudoku_Solver"><i class="fab fa-github" style="margin-top: 10px;"></i></a></li>
-        </ul>
-        <div class="data">
-          <div class="content">
-            <span class="type">Machine Learning | PyTorch | MNIST</span>
-            <h1 class="title"><a href="https://github.com/duncansclarke/ML_Sudoku_Solver">Computer Vision Sudoku Solver</a></h1>
-            <p class="text">
-              Reads sudoku puzzle from photograph and solves resulting puzzle.
+<body>
+    <main>
+        <div id="links-container">
+            <section class="link-section">
+                <h2 class="link-section-title">Duncan Clarke</h2>
+              <hr />
+            <p>YouTuber and writer, currently living in Toronto, Canada.</p>
+            <p>I'm known for making videos about the humanities through meme-formats such as 
+                <a href="https://www.youtube.com/watch?v=qK3btTCaFqY" style="color:white; text-decoration: underline;">tierlists </a>
+                    and 
+                    <a href="https://www.youtube.com/watch?v=GFz6KqZurFY" style="color:white; text-decoration: underline;">icebergs</a>.
+                I also make 
+                <a href="https://www.youtube.com/watch?v=zhVm3Cqrz2o" style="color:white; text-decoration: underline;">video essays</a>.
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="project card">
-      <div class="wrapper">
-        <div class="date">
-          <span class="month">Updated</span>
-          <span class="year">Regularly</span>
-        </div>
-        <ul class="menu-content">
-          <li>
-            <a href="https://github.com/duncansclarke/new-tab-page">
-              <i class="fab fa-github" style="margin-top: 10px;"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="data">
-          <div class="content">
-            <span class="type">HTML | CSS | JavaScript</span>
-            <h1 class="title"><a href="https://github.com/duncansclarke/new-tab-page">Custom New Tab Page</a></h1>
-            <p class="text">
-              A customized new tab page for personal use, containing links to my most used websites.
-              Also has search functions for Duckduckgo, YouTube, and Wikipedia.
+            <p>I am a founding member of the Toronto-based internet culture collective 
+                <a href="https://www.instagram.com/c_ccru/" style="color:white; text-decoration: underline;">The CCCRU</a> 
+                (The Canadian Cybernetics Culture Research Unit), half-jokingly named after the cultural theory collective from the 90s.
+                You can read about us 
+                <a href="https://joshuacitarella.substack.com/p/the-real-horseshoe-theory" style="color:white; text-decoration: underline;">here</a>
+                and 
+                <a href="https://lessfoolish.substack.com/p/scene-review-cccru-most-based" style="color:white; text-decoration: underline;">here</a>.
             </p>
-          </div>
+            <p>My main interests include cognitive science, psychology, literature, culture, linguistics, and philosophy (particularly metaphysics, epistemology, and philosophy of mind).</p>
+            <p>You can contact me at duncansclarke at gmail dot com.</p>
+            </section>
+            <br>
+            <section class="link-section">
+              <h2 class="link-section-title">Places you can find me</h2>
+              <hr />
+              <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://www.youtube.com/@duncanclarke" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/youtube.png" />
+                </a>
+                <a class="link" href="https://www.youtube.com/@duncanclarke">YouTube</a>
+                </li>
+            </ul>
+            <ul class="link-list">
+              <li class="link-list-item">
+              <a href="https://www.patreon.com/c/duncanclarke" style=" padding-top: 5px;">
+              <img class="icon" src="images/icons/patreon.png"/>
+              </a>
+              <a class="link" href="https://www.patreon.com/c/duncanclarke">Patreon</a>
+              </li>
+          </ul>
+            </ul>
+              <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://substack.com/@duncansclarke" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/substack.png" />
+                </a>
+                <a class="link" href="https://substack.com/@duncansclarke">Substack</a>
+                </li>
+            </ul>
+            <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://x.com/duncanc_" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/twitter.png" />
+                </a>
+                <a class="link" href="https://x.com/duncanc_">Twitter</a>
+                </li>
+            </ul>
+            <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://www.instagram.com/duncansclarke/" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/instagram.png" />
+                </a>
+                <a class="link" href="https://www.instagram.com/duncansclarke/">Instagram</a>
+                </li>
+            </ul>
+            <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://open.spotify.com/user/mrsuperdun?si=152fa4637cdb48eb" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/spotify.png" />
+                </a>
+                <a class="link" href="https://open.spotify.com/user/mrsuperdun?si=152fa4637cdb48eb">Spotify</a>
+                </li>
+            </ul>
+            <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://www.goodreads.com/user/show/33959839-duncan-clarke" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/goodreads.png" />
+                </a>
+                <a class="link" href="https://www.goodreads.com/user/show/33959839-duncan-clarke">Books I've read</a>
+                </li>
+            </ul>
+            <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://rateyourmusic.com/~duncansclarke" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/rym.png" />
+                </a>
+                <a class="link" href="https://rateyourmusic.com/~duncansclarke">Albums I've listened to</a>
+                </li>
+            </ul>
+            <ul class="link-list">
+                <li class="link-list-item">
+                <a href="https://letterboxd.com/duncanclarke/" style=" padding-top: 5px;">
+                <img class="icon" src="images/icons/letterboxd.png" />
+                </a>
+                <a class="link" href="https://letterboxd.com/duncanclarke/">Movies I've seen</a>
+                </li>
+            </ul>
+                
+            </section>
         </div>
-      </div>
-    </div>
-
-    <div class="project card">
-      <div class="wrapper" style="background: url(images/nqueens.jpg)
-              30% 1% / cover no-repeat;">
-        <div class="date">
-          <span class="month">April</span>
-          <span class="year">2019</span>
-        </div>
-        <ul class="menu-content">
-          <li>
-            <a href="https://github.com/duncansclarke/N-Queens">
-              <i class="fab fa-github" style="margin-top: 10px;"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="data">
-          <div class="content">
-            <span class="type">Python | Planning | Algorithms</span>
-            <h1 class="title"><a href="https://github.com/duncansclarke/N-Queens">N-Queens</a></h1>
-            <p class="text">
-              A collaborative project completed for an artificial intelligence course at Queen's University. 
-              Solves the N-Queens problem using an interative repair method in conjunction with a minimum conflicts heuristic.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  
-
-
-  <footer style='clear:both;'>
-    <hr width="750px">
-    <br>
-    <a href="https://www.linkedin.com/in/duncan-clarke-a2b18b156/" style="padding-right: 10px"><img src="images/linkedin.png" width="50px" /></a>
-    <a href="https://github.com/duncansclarke"><img src="images/github.png" width="50px" /></a>
-    <br>
-    <p>Email: duncansclarke@gmail.com | Phone: 905-431-5515</p>
-  </footer>
-</html>
+    </main>
+</body>
