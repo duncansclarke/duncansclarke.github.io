@@ -52,7 +52,7 @@ body {
     border-width: 1px;
     margin: 0 auto;
     max-width: 700px; /* Optional: limit how wide it can grow */
-    min-width: 300px;  /* Optional: avoid getting too narrow */
+    min-width: 250px;  /* Optional: avoid getting too narrow */
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
   }
