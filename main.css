@@ -97,7 +97,7 @@ body {
     padding-left: 7px;
     text-decoration: underline;
   }
-  
+
   .link {
     color: #ddd;
     display: block;
@@ -121,4 +121,16 @@ body {
   hr {
     border-width: 0.1px; 
     border-color: #000000;
+  }
+
+  p a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  
+  p a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #999;
   }
