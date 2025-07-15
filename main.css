@@ -6,17 +6,19 @@ html {
   }
 
 body {
-    align-items: center;
+    /* align-items: center; */
     background-color: #1f1f1f;
     background-color: black;
     color: #ddd;
     display: flex;
     /* height: 100%; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     justify-content: center;
     margin: 0;
     padding: 0;
     flex-direction: column;
+    min-height: 100%;
+    overflow-y: auto;
   }
 
   a {
@@ -33,7 +35,7 @@ body {
   /* font-family: 'EB Garamond', serif; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;       
   text-align: center;
   font-size: 14px;
