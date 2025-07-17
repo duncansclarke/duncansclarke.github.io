@@ -184,12 +184,14 @@ body {
   border-color: #353535;
   border-width: 1px;
   margin: 0 auto;
-  max-width: 700px; /* Optional: limit how wide it can grow */
+  max-width: 250px;; /* Optional: limit how wide it can grow */
   min-width: 250px;  /* Optional: avoid getting too narrow */
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  margin: 0 auto;
 }
+
 
 .navbar p {
     padding-left: 10px;
@@ -209,6 +211,8 @@ body {
     height: auto;
     text-decoration: underline;
     margin: 4px 6px;
+    justify-content: center;
+    text-align: center;
 }
 
 .post-section {
@@ -279,3 +283,27 @@ img, iframe {
       font-size: 18px;
   }
 }
+.navbar-links {
+  display: flex;
+  flex-wrap: nowrap; /* keeps them all on one line */
+  justify-content: center;
+  gap: 10px; /* space between links */
+  flex-shrink: 0;
+  overflow-x: auto; /* prevents overflow on tiny screens */
+  white-space: nowrap; /* prevents wrapping */
+}
+
+.navbar-links a:hover {
+  color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #999;
+}
+
+.navbar-links .link {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.navbar-links .divider {
+  color: #ddd;
+}
+
