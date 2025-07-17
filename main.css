@@ -225,7 +225,7 @@ body {
   border-color: #353535;
   border-width: 1px;
   margin: 0 auto;
-  max-width: 1250px;; /* Optional: limit how wide it can grow */
+  max-width: 700px; /* Optional: limit how wide it can grow */
   /* min-width: 250px;   */
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.5);
@@ -256,12 +256,12 @@ body {
 
 .post-section p{
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 .post-section img{
-  width: 50%;
+  width: 75%;
 }
 
 .blog-section img{
