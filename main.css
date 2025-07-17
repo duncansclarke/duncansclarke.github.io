@@ -135,3 +135,147 @@ body {
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #999;
   }
+
+
+  .blog-section {
+    background-color: #353535;
+    background-color: black;
+    padding: 10px;
+    overflow-y: auto;
+    /* box-shadow: 0px 0px 15px 2px #111; */
+    border-style: solid;
+    border-color: #353535;
+    border-width: 1px;
+    margin: 0 auto;
+    max-width: 700px; /* Optional: limit how wide it can grow */
+    /* min-width: 250px; */
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+  }
+
+.blog-section h2 {
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+.blog-section a{
+  color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.blog-section a:hover {
+  color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #999;
+}
+
+.blog-section h3 {
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+.navbar {
+  background-color: black;
+  padding: 5px;
+  overflow-y: auto;
+  /* box-shadow: 0px 0px 15px 2px #111; */
+  border-style: solid;
+  border-color: #353535;
+  border-width: 1px;
+  margin: 0 auto;
+  max-width: 700px; /* Optional: limit how wide it can grow */
+  min-width: 250px;  /* Optional: avoid getting too narrow */
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.navbar p {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* font-size: 16px; */
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.navbar .link{
+    color: #ddd;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-decoration: underline;
+    margin: 4px 6px;
+}
+
+.post-section {
+  background-color: #353535;
+  background-color: black;
+  padding: 10px;
+  overflow-y: auto;
+  /* box-shadow: 0px 0px 15px 2px #111; */
+  border-style: solid;
+  border-color: #353535;
+  border-width: 1px;
+  margin: 0 auto;
+  max-width: 1250px;; /* Optional: limit how wide it can grow */
+  /* min-width: 250px;   */
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin-bottom: 200px;
+}
+
+.post-section h2 {
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+.post-section a{
+  color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.post-section a:hover {
+  color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #999;
+}
+
+.post-section h3 {
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+.post-section p{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.post-section img{
+  width: 50%;
+}
+
+.blog-section img{
+  width: 35%;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .post-section p {
+      font-size: 16px;
+      line-height: 1.4;
+  }
+
+  .post-section h2,
+  .post-section h3 {
+      font-size: 18px;
+  }
+}
