@@ -323,12 +323,13 @@ img, iframe {
 
 .sticky-navbar .nav-link {
   color: #ddd;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 0 6px;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .sticky-navbar .nav-link:hover {
+  /* text-decoration: underline; */
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #999;
 }
